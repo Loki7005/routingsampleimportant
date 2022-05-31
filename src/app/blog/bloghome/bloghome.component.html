@@ -1,0 +1,11 @@
+<div class="vertical-menu col-sm-4">
+    <h3>Blog Menu!</h3>
+    <br>
+    <a routerLinkActive="active" routerLink="/blog/story" [skipLocationChange]="true">Click to go Story</a>
+    <br>
+    <a routerLinkActive="active" routerLink="/blog/puzzle" [skipLocationChange]="true">Click to go Puzzle</a>
+    <br>
+</div>
+<div class="col-sm-8">
+  <router-outlet></router-outlet>
+</div>

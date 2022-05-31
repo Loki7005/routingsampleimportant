@@ -1,0 +1,23 @@
+<h1>Page-not-Found !</h1>
+<div class="btn-group me-3">
+  <button type="button" class="btn btn-primary">Split me</button>
+  <div class="btn-group" ngbDropdown role="group" aria-label="Button group with nested dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle-split" ngbDropdownToggle></button>
+    <div class="dropdown-menu" ngbDropdownMenu>
+      <button ngbDropdownItem>One</button>
+      <button ngbDropdownItem>Two</button>
+      <button ngbDropdownItem>Four!</button>
+    </div>
+  </div>
+</div>
+<ul ngbNav #nav="ngbNav" class="nav-tabs">
+  <li ngbNavItem>
+    <a ngbNavLink>First</a>
+    <ng-template ngbNavContent>First content</ng-template>
+  </li>
+  <li ngbNavItem>
+    <a ngbNavLink>Second</a>
+    <ng-template ngbNavContent>Second content</ng-template>
+  </li>
+</ul>
+<div [ngbNavOutlet]="nav"></div>
